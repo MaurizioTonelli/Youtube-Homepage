@@ -111,15 +111,18 @@ body{
 .videoCol{
     flex: 9;
     display: flex;
+    margin-left: 40px;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 }
 .video{
     padding: 20px 0px 0px 0px;
+    width: 100%;
     border-bottom: 1px solid #333;
 }
 #video{
-    width: 55vw;
+    width: 100%;
     height: 40vw;
 }
 .description{
@@ -171,11 +174,55 @@ body{
 .info button img{
     margin-right: 2px;
 }
-
+/*CHANNEL INFO*/
+.channel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid #333;
+    padding: 15px;
+}
+.profilePic{
+    border-radius: 50%;
+    height: 50px;
+}
+.videoInfo{
+    flex: 4;
+}
+.videoInfo h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 14px 0px 0px 10px;
+    padding: 0;
+}
+.videoInfo h2{
+    margin: 0px 0px 0px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #999;
+}
+.videoInfo p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 20px 0px 0px 10px;
+}
+.subscribe{
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    margin: 15px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
 /*RECOMMENDATIONS COLUMN*/
 .recommendationsCol {
     flex: 5;
-    background-color: green;
     height: 100%;
     width: 100px;
 }
