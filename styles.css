@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+/*NAVIGATION*/
+.mainNav{
+    background-color: #222;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navStart, .navCenter, .navEnd{
+    padding: 10px;
+}
+
+/*FIRST PORTION OF NAVIGATION*/
+.navStart {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2;
+}
+.navStart button{
+    height: 100%;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navStart h1{
+    font-family:'Oswald',sans-serif;
+    font-size: 1.4em;
+}
+
+/*MIDDLE PORTION OF NAVIGATION*/
+.navCenter{
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navCenter input[type="text"]{
+    width: 60%;
+    height: 33px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: white;
+}
+.navCenter button {
+    border: 1px solid #333;
+    background-color: #333;
+    height: 33px;
+    width: 70px;
+}
+
+/*LAST PORTION OF NAVIGATION*/
+.navEnd{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navEnd button{
+    margin: 5px;
+    border: none;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navEnd .login{
+    width: 110px;
+    justify-content: space-evenly;
+    height: 35px;  
+    border: 1px solid rgb(73, 158, 238);
+    color: rgb(73, 158, 238);
+}
+.navEnd h3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em; 
+}
+/*CONTENT SECTION*/
+.content{
+    margin-top: 60px;
+    display: flex;
+}
+.videoCol{
+    flex: 9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.video{
+    padding: 20px;
+    border: 1px solid white;
+}
+#video{
+    width: 55vw;
+    height: 40vw;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.recommendationsCol {
+    flex: 5;
+    background-color: green;
+    height: 100%;
+    width: 100px;
+}
