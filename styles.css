@@ -356,6 +356,15 @@ body{
     margin-right: 50px;
     margin-top: 15px;
 }
+.recommendation:hover{
+    cursor: pointer;
+}
+.recommendation:hover .thumbnailIcons{
+    visibility: visible;
+}
+.recommendation:hover .recommendationDots{
+    visibility: visible;
+}
 .thumbnail{
     width: 50%;
     display: flex;
@@ -366,8 +375,36 @@ body{
     margin: 0px 10px;
 }
 .thumbnail .timestamp{
-    visibility: hidden;
+    background-color: rgba(0,0,0,0.8);
     position: absolute;
+    padding: 0px 5px;
+    bottom: 5px;
+    line-height: 0px;
+    right: 10px;
+}
+
+.thumbnail .timestamp p{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    padding: 0;
+    font-weight: 700;
+}
+.thumbnail .thumbnailIcons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1px; 
+    right: 1px;
+    visibility: hidden;
+}
+.recommendationDots{
+    visibility: hidden;
+}
+.thumbnail .thumbnailIcons img{
+    margin: 2px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 2px;
+
 }
 .recommendation h1{
     font-family: "Roboto", sans-serif;
